@@ -12,7 +12,7 @@
 
     <!------------------ Barre de navigation du menu --------->
     <header class="container-fluid row bg-success text-white w-100 p-3">
-        <h1 class="col- sm-1">Eco Eats</h1>
+        <h1 id="haut" class="col- sm-1">Eco Eats</h1>
         <img class="col-1 sm-1" src="img/logoEcoEatsnav.png" alt="logo eco eats">
         <nav class="container col-9">
             <ul class="nav justify-content-between">            
@@ -49,14 +49,16 @@
 
         <article class="container">
             <ul class="row text-center align-items-center list-unstyled">
-                <li class="col-4"><img src="img/agriculteur.jpg" alt="Nos agriculteurs"></li>
-                <li class="col-4"><img src="img/équipe cuisine.jpg" alt="Notre équipe"></li>
-                <li class="col-4"><img src="img/professional-kitchen.jpg" alt="Nos locaux"></li>
+                <li class="col-4">Nos agriculteurs<img src="img/agriculteur.jpg" alt="Nos agriculteurs"></li>
+                <li class="col-4">Notre équipe<img src="img/équipe cuisine.jpg" alt="Notre équipe"></li>
+                <li class="col-4">Nos locaux<img src="img/professional-kitchen.jpg" alt="Nos locaux"></li>
                 
             </ul>
         </article>
         
-       
+        <a href="#haut" class="retour-haut">
+            <span>↑ retour menu</span>
+          </a>
     </section>
     <!------------------- Section menu-------------------------->
     <section class="container-fluid bg-success bg-opacity-50 justify-content-between">
@@ -112,7 +114,9 @@
         <article class="text-center lead">
             <p><b>Formule entrée / plat / desserts : 20€ <br> Formule entrée / plat : 15€ <br> Formule plat / déssert : 12€</b></p>
         </article>
-
+<a href="#haut" class="retour-haut">
+            <span>↑ retour menu</span>
+          </a>
         
     </section>
 <!-- ----------------section comment ca marche ---------------->
@@ -122,10 +126,58 @@
 
         <article class="text-center justify-content-center">
             <h3 class="text-white">Processus de commande</h3>
-            <ol class="list-unstyled">
-                <li>Choississez la formule qui vous convient  </li>
+            <ol class="list-unstyled lead">
+                <li><img src="img/camionlivraison.png" alt="img camion"></li><br><br>
+                <li>Choississez la formule qui vous convient parmi notre trois formules proposées </li>
+                <li>Choississez les plats de notre carte</li>
+                <li>remplissez le formulaire pour indiquer votre sélection, la date et l'heure de livraison, <br> merci de bien indiquer si besoin un complément d'information de votre adresse pour une livraison plus efficace</li>
+                <li>choississez votre mode de règlement</li>
+                <li>On s'occupe du reste</li>
+                <li>Bon appétit</li><br><br>
+                <li><img src="img/camionlivraison.png" alt="img camion"></li>
             </ol>
         </article>
+        <a href="#haut" class="retour-haut">
+            <span>↑ retour menu</span>
+          </a>
+    </section>
+    <!-- section formulaire -->
+    <section>
+    <section class="container-fluid bg-success bg-opacity-10">
+
+        <h2 id="formulaire">Formulaire de contact</h2>
+
+        <article class="container text-center">
+    <form action="" method="get" class="form-control form-control-sm bg-success">
+
+    <fieldset>
+
+        <legend>Formulaire de contact</legend>
+
+        <label for="name">Votre prénom</label>
+        <input type="text" name="name" required minlength="1"/><br>
+    
+        <label for="lastname">Votre nom</label>
+        <input type="text" name="lastname" required minlength="1"/><br>
+    
+        <label for="adress">Votre adresse</label>
+        <input type="text" name="adress" required minlength="1" maxlength="50"/><br>
+    
+        <label for="email">Votre e-mail</label>
+        <input type="email" name="email" required minlength="1"/><br>
+        
+        <label for="phone">Votre n° de téléphone</label>
+        <input type="tel" name="phone" required minlength="1" pattern="[0-9]{10}"/><br>
+
+        <input type="submit" value="envoyer">
+
+    </fieldset>
+    
+    </form>
+</article>
+<a href="#haut" class="retour-haut">
+            <span>↑ retour menu</span>
+          </a>
     </section>
 </body>
 </html>
