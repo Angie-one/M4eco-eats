@@ -49,9 +49,9 @@
 
         <article class="container">
             <ul class="row text-center align-items-center list-unstyled">
-                <li class="col-4">Nos agriculteurs<img src="img/agriculteur.jpg" alt="Nos agriculteurs"></li>
-                <li class="col-4">Notre équipe<img src="img/équipe cuisine.jpg" alt="Notre équipe"></li>
-                <li class="col-4">Nos locaux<img src="img/professional-kitchen.jpg" alt="Nos locaux"></li>
+                <li class="col-4">Nos agriculteurs<img class="img-fluid" src="img/agriculteur.jpg" alt="Nos agriculteurs"></li>
+                <li class="col-4 img-fluid">Notre équipe<img class="img-fluid" src="img/équipe cuisine.jpg" alt="Notre équipe"></li>
+                <li class="col-4 img-fluid">Nos locaux<img class="img-fluid" src="img/professional-kitchen.jpg" alt="Nos locaux"></li>
                 
             </ul>
         </article>
@@ -112,7 +112,7 @@
         </article>
 
         <article class="text-center lead">
-            <p><b>Formule entrée / plat / desserts : 20€ <br> Formule entrée / plat : 15€ <br> Formule plat / déssert : 12€</b></p>
+            <p><b>Formule n°1 entrée / plat / desserts : 20€ <br> Formule n°2 entrée / plat : 15€ <br> Formule n°3 plat / déssert : 12€</b></p>
         </article>
 <a href="#haut" class="retour-haut">
             <span>↑ retour menu</span>
@@ -125,7 +125,7 @@
         <h2 id="commentcamarche">Comment ça marche ?</h2>
 
         <article class="text-center justify-content-center">
-            <h3 class="text-white">Processus de commande</h3>
+            <h3 class="text-white">Processus de commande</h3><br><br>
             <ol class="list-unstyled lead">
                 <li><img src="img/camionlivraison.png" alt="img camion"></li><br><br>
                 <li>Choississez la formule qui vous convient parmi notre trois formules proposées </li>
@@ -141,18 +141,18 @@
             <span>↑ retour menu</span>
           </a>
     </section>
-    <!-- section formulaire -->
+    <!-------------- section formulaire ------------------->
     <section>
     <section class="container-fluid bg-success bg-opacity-10">
 
         <h2 id="formulaire">Formulaire de contact</h2>
 
         <article class="container text-center">
-    <form action="" method="get" class="form-control form-control-sm bg-success">
+    <form action="" method="get" class="form-control form-control-sl bg-success">
 
-    <fieldset>
+    <fieldset class="input-group-lg">
 
-        <legend>Formulaire de contact</legend>
+        <legend class="text-white border">Formulaire de contact</legend>
 
         <label for="name">Votre prénom</label>
         <input type="text" name="name" required minlength="1"/><br>
@@ -161,13 +161,35 @@
         <input type="text" name="lastname" required minlength="1"/><br>
     
         <label for="adress">Votre adresse</label>
-        <input type="text" name="adress" required minlength="1" maxlength="50"/><br>
+        <input type="text" name="adress" required minlength="1" maxlength="80"/><br>
     
         <label for="email">Votre e-mail</label>
         <input type="email" name="email" required minlength="1"/><br>
         
         <label for="phone">Votre n° de téléphone</label>
-        <input type="tel" name="phone" required minlength="1" pattern="[0-9]{10}"/><br>
+        <input type="tel" name="phone" required minlength="1" pattern="[0-9]{10}"/><br><br>
+
+        <legend class="text-white border">Formulaire de de commande</legend><br>
+
+        <label for="formule">Quelle Formule souhaitez vous ?</label><br>
+
+        <label for="formule"><input type="checkbox" name="formule" value="F1"><b>Formule n°1 entrée / plat / desserts</b></label><br>
+
+        <label for="formule">Nombre de formule<input type="text" name="formule" required minlength="1" maxlength="80" pattern="[0-9]{2}"/></label><br>
+
+        <label for="formule"><input type="checkbox" name="formule" value="F2"><b>Formule n°2 entrée / plat</b></label><br>
+
+        <label for="formule">Nombre de formule<input type="text" name="formule" required minlength="1" maxlength="80" pattern="[0-9]{2}"/><br>
+
+        <label for="formule"><input type="checkbox" name="formule" value="F3"><b>Formule n°3 plat / déssert</b></label><br>
+
+        <label for="formule">Nombre de formule<input type="text" name="formule" required minlength="1" maxlength="80" pattern="[0-9]{2}"/><br>
+
+        <label for="carte">Quel entrée, plats et ou dessert<input type="text" name="carte"  required maxlength="150" placeholder="Choississez votre entrée, plat et ou dessert " ></label><br><br>
+
+        <legend class="text-white border">Formulaire de renseignement</legend><br>
+
+        <label for="question">Une information complémentaires, devis, commande ? <br> Merci d'utiliser notre formulaire <input type="text" name="question" required maxlength="150" placeholder="Information supplémentaire" ></label><br><br>
 
         <input type="submit" value="envoyer">
 
