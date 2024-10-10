@@ -164,7 +164,7 @@ Formule n°3 plat / déssert : 12€</pre>
 
     <form action="" method="get" class="form-control form-control-sl bg-success form-floating">
 
-    <fieldset class="input-group-sg form-group">
+    <fieldset class="input-group-sg">
 
         <legend class="text-white border">Formulaire de contact</legend>
     <div class="form-group">
@@ -188,38 +188,65 @@ Formule n°3 plat / déssert : 12€</pre>
     
     </fieldset>  
     </form>
-    <form action="" method="get" class="form-control form-control-sl bg-success ">
+    <form action="" method="get" class="bg-success form-control form-control-sl form-floating">
 
-        <fieldset class="input-group-lg form-group form-col ">
-                <legend class="text-white border">Formulaire de commande</legend>
-        <div class="form-group">
-            <label for="formule"><input type="checkbox"  name="formule" value="F1"><b>Formule n°1 entrée / plat / desserts</b></label>
-
-            <label class="row"  for="formule">Nombre de formule<input class="form-control"  type="text" name="formule" maxlength="80" pattern="[0-9]{2}"/></label>
-        </div>
-        <div>
-            <label for="formule"><input type="checkbox" name="formule" value="F2"><b>Formule n°2 entrée / plat</b></label>
-
-            <label class="row"  for="formule">Nombre de formule<input class="form-control"  type="text" name="formule"  maxlength="80" pattern="[0-9]{2}"/>
-        </div>
-        <div>
-            <label  for="formule"><input type="checkbox" name="formule" value="F3"><b>Formule n°3 plat / déssert</b></label>
-
-            <label class="row" for="formule">Nombre de formule<input class="form-control"  type="text" name="formule"  maxlength="80" pattern="[0-9]{2}"/>
+        <fieldset>
+            <legend class="text-white border">Formulaire de commande</legend>
+        <div class="container form-group row justify-content-around">
+            <div class="col-4 align-self-center">
+                <label for="formule"><input type="checkbox" name="formule" value="F1"><b>Formule n°1 entrée / plat / dessert</b></label>
             </div>
-            <label class="row 3"  for="carte">Quel entrée, plats et ou dessert<textarea type="text" name="carte"  required maxlength="150" placeholder="Choississez votre entrée, plat et ou dessert " ></textarea></label>
+            <div class="col-3">
+                <label for="formule">Nombre de formule<input class="form-control"  type="text" name="formule"  maxlength="80" pattern="[0-9]{2}"/>
+            </label>
+            </div>
+            <div class="col-5">
+                <label class="row 3"  for="carte">Quel entrée, plat et dessert<textarea class="form-control" type="text" name="carte"  required maxlength="150" placeholder="Choississez votre entrée, plat et ou dessert " ></textarea></label>
+            </div>
+        </div>
+        <div class="container form-group row justify-content-around">
+            <div class="col-4 align-self-center">
+                <label for="formule"><input type="checkbox" name="formule" value="F2"><b>Formule n°2 entrée / plat</b></label>
+            </div>
+            <div class="col-3">
+                <label for="formule">Nombre de formule<input class="form-control"  type="text" name="formule"  maxlength="80" pattern="[0-9]{2}"/>
+            </label>
+            </div>
+            <div class="col-5">
+                <label class="row 3"  for="carte">Quel entrée et plat<textarea class="form-control" type="text" name="carte"  required maxlength="150" placeholder="Choississez votre entrée, plat et ou dessert " ></textarea></label>
+            </div>
+        </div>
+        <div class="container form-group row justify-content-around">
+            <div class="col-4 align-self-center">
+                <label for="formule"><input type="checkbox" name="formule" value="F3"><b>Formule n°3 plat / dessert</b></label>
+            </div>
+            <div class="col-3">
+                <label for="formule">Nombre de formule<input class="form-control"  type="text" name="formule"  maxlength="80" pattern="[0-9]{2}"/>
+            </label>
+            </div>
+            <div class="col-5">
+                <label class="row 3"  for="carte">Quel plat et dessert<textarea class="form-control" type="text" name="carte"  required maxlength="150" placeholder="Choississez votre entrée, plat et ou dessert " ></textarea></label>
+            </div>
+        </div>
+        <div>
+            <label for="date"><b>Date de livraison </b><input class="form-control" type="date" name="date"></label>
+
+            <label for="time"><b>Heure de livraison </b><input class="form-control" type="time" name="time"></label>
+        </div>
+            
         </fieldset>
 
     </form>
     <form action="" method="get" class="form-control form-control-sl bg-success form-floating">
 
-        <fieldset class="input-group-lg">
+        <fieldset class="input-group-lg form-group col">
             <legend class="text-white border">Formulaire de renseignement</legend>
-
-            <label for="question">Une information complémentaires, devis, commande ? <br> Merci d'utiliser notre formulaire <input type="text" name="question" required maxlength="150" placeholder="Information supplémentaire" ></label>
-
+        <div class="row">
+            <label class="row-3" for="question"><b>Une information complémentaire, devis, commande ? Merci d'utiliser notre formulaire</b><textarea class="form-control" type="text" name="carte"  required maxlength="150" placeholder="Pour toutes questions complémentaires, devis de groupe ..." ></textarea></label>
+        </div>
+        <div class="p-md-2 font-weight-bold text-center">
             <input type="submit" value="envoyer">
-
+        </div>
         </fieldset>
     </form>
 
@@ -239,4 +266,5 @@ Formule n°3 plat / déssert : 12€</pre>
     </footer>
 </body>
 </html>
-<!--  -->
+
+<!-- version 1 ; créatrice : LIGNEY Angélique -->
